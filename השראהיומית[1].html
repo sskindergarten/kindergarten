@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Inspiration</title>
+    <style>
+        body {
+            font-family: 'Guttman Yad-Brush';
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('NewFolder1/עיצוב ללא שם (2).png');
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff99;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .btn {
+            font-family:'Comic Sans MS';
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+            .btn:hover {
+                background: #666;
+            }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ברוכות הבאות לאתר המסר היומי לגננת</h1>
+        
+
+        <button class="btn" onclick="getQuote()">💪לחצי לקבלת מסר יומי </button>
+        <div id="quote" style="margin-top: 20px; font-weight: bold;"></div>
+    </div>
+
+    <script>
+        function getQuote() {
+            const quotes = [
+                "את חזקה יותר ממה שאת מדמיינת",
+                "תאמיני בעצמך, כי את מסוגלת להשיג כל יעד",
+                "כל יום מביא הזדמנות לגדול ולהתקדם",
+                "את ראויה לכל אהבה והערכה",
+                "בתוכך טמון הכוח האמיתי, השתמשי בו",
+                "אין צורך במושלמות כדי להיות מדהימה",
+                "העולם צריך נשים אמיצות כמוך",
+                "תתגאי בהצלחות שלך, הן מגיעות לך בזכות",
+                "אל תוותרי על החלומות שלך, הם ברי הגשמה",
+                "השמיים הם הגבול למה שאת יכולה להשיג",
+                "את מסוגלת להתמודד עם כל אתגר",
+                "אין עוד כמוך, את ייחודית במינך",
+                "תהני מהמסע של חייך, כל רגע יקר",
+                "הכוח לשנות את העולם נמצא בידיים שלך",
+                "תאהבי את עצמך כמו שאת, כי את נפלאה",
+                "את יוצרת את המציאות שלך במו ידייך",
+                "תעזי להיות שונה, זה מה שמייחד אותך",
+                "אין דבר שעומד בפני הרצון שלך",
+                "את יכולה להשיג כל מטרה שתציבי",
+                "האמיני ביכולות שלך, הן בלתי ניתנות לתיאור",
+                "כל צעד שאת עושה מקרב אותך להצלחה",
+                "את יכולה להתמודד עם כל מצב",
+                "החיים הם מה שאת עושה מהם",
+                "את חשובה ומשמעותית יותר ממה שאת חושבת",
+                "בתוכך הכוח לשנות את חייך",
+                "את חכמה, חזקה ויפה",
+                "תאמיני בעצמך, את מדהימה",
+                "כל אישה יכולה להיות כל מה שהיא חולמת עליו",
+                "את יכולה להוביל ולהשפיע על הסביבה שלך",
+                "את ראויה לכל הטוב שבעולם",
+                "יש לך את הכוח לשנות את העתיד שלך",
+                "את יכולה להיות מודל לחיקוי לאחרות",
+                "כל יום הוא הזדמנות חדשה לצמוח ולהתפתח",
+                "את לא לבד, יש לך את הכוח והתמיכה שאת צריכה",
+                "את יכולה להתמודד עם כל מה שיבוא",
+                "את לא יכולה לשנות את הקלפים שחילקו לך, אבל את כן יכולה לשחק איתם חכם",
+                "כשאת רואה מכשול - סימן שהורדת את העיניים מהמטרה",
+                "לחץ לא מעלים את הצרות של העתיד, אבל הוא כן מעלים את החוזקות של ההווה",
+                "כשמישהו אומר לך לא, זה לא אומר שאי אפשר לעשות את זה, אלא רק שאי אפשר לעשות את זה איתו",
+
+
+
+
+
+
+
+
+
+
+
+
+            ];
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').innerText = quotes[randomIndex];
+        }
+    </script>
+</body>
+</html>
